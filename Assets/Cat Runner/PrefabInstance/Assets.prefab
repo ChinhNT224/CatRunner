@@ -1,0 +1,60 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1794405513714527
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4545000571658364}
+  - component: {fileID: 114566273167610366}
+  m_Layer: 0
+  m_Name: Assets
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4545000571658364
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794405513714527}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114566273167610366
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1794405513714527}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 2cfecc911e9c16523ccd3d65e07da0f2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  fogColor: {r: 0.8088235, g: 0.9446247, b: 1, a: 0}
+  fogGradientTop: {r: 0.08823532, g: 0.59354764, b: 1, a: 0}
+  fogGradientBottom: {r: 0.9485294, g: 0.99574035, b: 1, a: 0}
+  fogSilhouetteColor: {r: 0.7205882, g: 0.88438123, b: 1, a: 0}
+  fogGradientOffset: 0.52
+  glowCan: {fileID: 2100000, guid: 0fd92a62197dd4349919bb32839587dd, type: 2}
+  glowCanColor: {r: 0.33088237, g: 0.80618674, b: 1, a: 0}
+  glowGold: {fileID: 2100000, guid: 38ece6ec2fd0efb44aa30229ab6ac569, type: 2}
+  glowGoldColor: {r: 0.43137255, g: 0.2811732, b: 0, a: 0}
+  glowFalloff: 200
+  uguiDefault: {fileID: 0}
+  uguiGray: {fileID: 2100000, guid: 77dcb357c4bd47544819b11478ab82ce, type: 2}
+  gzrbrreIqrshNeujakgqv:
+  - {fileID: 2100000, guid: a21a6f44ccb0de747bb389ec69fd834d, type: 2}
+  Silhouette: {fileID: 316, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}

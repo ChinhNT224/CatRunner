@@ -1,0 +1,125 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1154357157036695
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4619114908177681}
+  m_Layer: 0
+  m_Name: L3_07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4619114908177681
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1154357157036695}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children:
+  - {fileID: 4426334278667498}
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1 &1907173564633471
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4426334278667498}
+  m_Layer: 0
+  m_Name: L2_07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4426334278667498
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1907173564633471}
+  m_LocalRotation: {x: 0, y: 1.7429708E-16, z: -0, w: 1}
+  m_LocalPosition: {x: -2.3841858E-07, y: 0, z: 0}
+  m_LocalScale: {x: 1.2515498, y: 1.2515498, z: 1.2515498}
+  m_Children:
+  - {fileID: 4355800393416143}
+  m_Father: {fileID: 4619114908177681}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: -1.9972974E-14, z: 0}
+--- !u!1 &1436845281158634
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4355800393416143}
+  m_Layer: 0
+  m_Name: L1_03
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4355800393416143
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1436845281158634}
+  m_LocalRotation: {x: -2.3841855E-07, y: -3.9654803E-13, z: 1.6689304E-06, w: 1}
+  m_LocalPosition: {x: -2.3841858E-07, y: 0.012374878, z: 4.172325E-07}
+  m_LocalScale: {x: 1.25155, y: 1.25155, z: 1.25155}
+  m_Children:
+  - {fileID: 4179268922206887}
+  m_Father: {fileID: 4426334278667498}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -2.7320753E-05, y: -1.5537895E-13, z: -0.00019124533}
+--- !u!1 &1864441208521305
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4179268922206887}
+  m_Layer: 0
+  m_Name: eye07
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4179268922206887
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1864441208521305}
+  m_LocalRotation: {x: -1.2246469E-16, y: -9.784295E-23, z: 7.9894835E-07, w: 1}
+  m_LocalPosition: {x: 5.066395E-07, y: -1.7563527E-06, z: 5.312557E-16}
+  m_LocalScale: {x: 0.9999999, y: 1, z: 0.9999999}
+  m_Children: []
+  m_Father: {fileID: 4355800393416143}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: -1.4033419E-14, y: -1.1390886E-27, z: -9.1552734E-05}

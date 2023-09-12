@@ -1,0 +1,296 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1425713324424539
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4535065950420425}
+  - component: {fileID: 114943243898329458}
+  - component: {fileID: 114237430931966621}
+  m_Layer: 30
+  m_Name: Guild
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4535065950420425
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425713324424539}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114943243898329458
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425713324424539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a9ed658529433c20d3b69a7ad88744be, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  coinForGuild: 500
+  start:
+  - key: FirstRun
+    descripe:
+    datas:
+    - delay: 5
+      duration: 3
+      target: {fileID: 0}
+      type: 3
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+  - key: StartTeaching
+    descripe:
+    datas:
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 3
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: -100, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 3
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: -100, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 3
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: -100, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 3
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: -100, z: 0}
+  - key: StartTeaching_New
+    descripe:
+    datas:
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 1
+      speak:
+        who: guide_avatar_cat
+        content: Click_Here_To_Rebuild_The_Room.
+        clip:
+      speakPosition: {x: 0, y: -100, z: 0}
+    - delay: 0.51
+      duration: 0
+      target: {fileID: 0}
+      type: 1
+      speak:
+        who: guide_avatar_cat
+        content: This_Is_a_Guideline,click_To_Rebuild_The_Floor.
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 1
+      speak:
+        who: guide_avatar_cat
+        content: Rebuild_Floor_Cost_a_Little_Coins,click_Here_To_Unlock.
+        clip:
+      speakPosition: {x: 0, y: 280, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 1
+      speak:
+        who: guide_avatar_cat
+        content: Selecting_The_Style_To_Preview_The_Effect._Click_To_Confirm.
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 1
+      speak:
+        who: guide_avatar_cat
+        content: I_Made_a_List_Of_Build,_Let’s_Take_a_Look.
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 1
+      speak:
+        who: guide_avatar_cat
+        content: Click_Here_To_Return_To_The_Level_Interface.
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+  once:
+  - key: TeachingHelmetSelect
+    descripe:
+    datas:
+    - delay: 0.2
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+  - key: TeachingChestOpen
+    descripe:
+    datas:
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+  - key: TeachingRoomEnter
+    descripe:
+    datas:
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 1
+      speak:
+        who: guide_avatar_cat
+        content: Yeah!_The_Door_Is_Open._Come_Into_The_Next_Room.
+        clip:
+      speakPosition: {x: 0, y: 360, z: 0}
+  - key: TeachingSideMission
+    descripe:
+    datas:
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+  - key: TeachingCharacter
+    descripe:
+    datas:
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+    - delay: 0.5
+      duration: 0
+      target: {fileID: 0}
+      type: 0
+      speak:
+        who: guide_avatar_cat
+        content: 2222222222
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+  recycle:
+  - key: FurnitureCategoryPurchseTip
+    descripe:
+    datas:
+    - delay: 4
+      duration: 2
+      target: {fileID: 0}
+      type: 4
+      speak:
+        who:
+        content:
+        clip:
+      speakPosition: {x: 0, y: 0, z: 0}
+--- !u!114 &114237430931966621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1425713324424539}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 05ffe178fe00d4692cd48239e663fd22, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:

@@ -1,0 +1,94 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1784138613870943
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4516965024075359}
+  - component: {fileID: 114884849221294447}
+  m_Layer: 29
+  m_Name: Helmet Model Preview Factory
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4516965024075359
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784138613870943}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114884849221294447
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1784138613870943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 6e6b7fc80b2eea0bdc230721295968af, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  helmets:
+  - name: Hoverhelm
+    eulerAngles: {x: 14, y: 110.5, z: 0}
+    menuYPos: 0.7
+    hangtimeClip: {fileID: 7400000, guid: 400cc12fa3bc78c47ac3a8b41f810e74, type: 2}
+    runClip: {fileID: 7400000, guid: 9231e98e641f9d745a167c90a8ed4f23, type: 2}
+    helmetPrefab: {fileID: 1737155164213789, guid: b0860e8cd99655f46ac5847fc63d43e8, type: 2}
+    helmetPrefabInScroll: {fileID: 1737155164213789, guid: b0860e8cd99655f46ac5847fc63d43e8, type: 2}
+    helmetPrefabInScrollView: {fileID: 0}
+  - name: Snowhelm
+    eulerAngles: {x: 14, y: 110.5, z: 0}
+    menuYPos: 0.7
+    hangtimeClip: {fileID: 7400000, guid: 27ffdb1bf15fb7744b9d1ecf0545c368, type: 2}
+    runClip: {fileID: 7400000, guid: 9231e98e641f9d745a167c90a8ed4f23, type: 2}
+    helmetPrefab: {fileID: 1260671708942472, guid: 446371c02cbdd174cb02fd068a938d3c, type: 2}
+    helmetPrefabInScroll: {fileID: 1260671708942472, guid: 446371c02cbdd174cb02fd068a938d3c, type: 2}
+    helmetPrefabInScrollView: {fileID: 0}
+  - name: Monster
+    eulerAngles: {x: 14, y: 110.5, z: 0}
+    menuYPos: 0.7
+    hangtimeClip: {fileID: 7400000, guid: 400cc12fa3bc78c47ac3a8b41f810e74, type: 2}
+    runClip: {fileID: 7400000, guid: 9231e98e641f9d745a167c90a8ed4f23, type: 2}
+    helmetPrefab: {fileID: 1594492812137395, guid: 04d53755a27e27644b825b37ac7e79fe, type: 2}
+    helmetPrefabInScroll: {fileID: 1594492812137395, guid: 04d53755a27e27644b825b37ac7e79fe, type: 2}
+    helmetPrefabInScrollView: {fileID: 0}
+  - name: Bouncer
+    eulerAngles: {x: 14, y: 110.5, z: 0}
+    menuYPos: 0.7
+    hangtimeClip: {fileID: 7400000, guid: a03cebc888fad12408ca803b4693dbf6, type: 2}
+    runClip: {fileID: 7400000, guid: 9231e98e641f9d745a167c90a8ed4f23, type: 2}
+    helmetPrefab: {fileID: 1502309561423400, guid: 5fa5bae007ad0f24b805b73bc8dab1b0, type: 2}
+    helmetPrefabInScroll: {fileID: 1502309561423400, guid: 5fa5bae007ad0f24b805b73bc8dab1b0, type: 2}
+    helmetPrefabInScrollView: {fileID: 0}
+  - name: Miami
+    eulerAngles: {x: 14, y: 110.5, z: 0}
+    menuYPos: 0.7
+    hangtimeClip: {fileID: 7400000, guid: 27ffdb1bf15fb7744b9d1ecf0545c368, type: 2}
+    runClip: {fileID: 7400000, guid: 9231e98e641f9d745a167c90a8ed4f23, type: 2}
+    helmetPrefab: {fileID: 1780388943524293, guid: fdc2efdb4fee6c54e9e9d3e7bb2224fa, type: 2}
+    helmetPrefabInScroll: {fileID: 1780388943524293, guid: fdc2efdb4fee6c54e9e9d3e7bb2224fa, type: 2}
+    helmetPrefabInScrollView: {fileID: 0}
+  - name: Rome
+    eulerAngles: {x: 14, y: 110.5, z: 0}
+    menuYPos: 0.7
+    hangtimeClip: {fileID: 7400000, guid: a03cebc888fad12408ca803b4693dbf6, type: 2}
+    runClip: {fileID: 7400000, guid: 9231e98e641f9d745a167c90a8ed4f23, type: 2}
+    helmetPrefab: {fileID: 1120679621611028, guid: 83df32dfa5b9cc249b7da12a83a77f24, type: 2}
+    helmetPrefabInScroll: {fileID: 1120679621611028, guid: 83df32dfa5b9cc249b7da12a83a77f24, type: 2}
+    helmetPrefabInScrollView: {fileID: 0}

@@ -1,0 +1,92 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1172354817852143
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4761870770155476}
+  - component: {fileID: 114857543081261706}
+  - component: {fileID: 114715765179737286}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4761870770155476
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172354817852143}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114857543081261706
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172354817852143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0a0ca63b3ffd8abd27adc1e29a62eb97, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  trackController: {fileID: 0}
+  startTime: 0
+  startHelmetTime: 0
+  fixedStartTime: 0
+  topMenu: {fileID: 506, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  DieMSound:
+    Clip: {fileID: 8300000, guid: 1bc9c55620f71284a89b487e63d98774, type: 3}
+    minPitch: 0.8
+    maxPitch: 1.1
+    minVolume: 0.5
+    maxVolume: 0.7
+    Rollof: 1
+  DieWSound:
+    Clip: {fileID: 8300000, guid: 1fcf02152f17a0643a85baa793f96198, type: 3}
+    minPitch: 0.8
+    maxPitch: 1.1
+    minVolume: 0.5
+    maxVolume: 0.7
+    Rollof: 1
+  backToCheckpointDelayTime: 0.7
+  backToCheckpointZoomTime: 1
+  hitType: 0
+  isReadyForSlideinPowerups: 0
+--- !u!114 &114715765179737286
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1172354817852143}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 897af2fedee1dbc8742a968fb3f7e962, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  trackController: {fileID: 0}
+  startTime: 0
+  startHelmetTime: 0
+  fixedStartTime: 0
+  topMenu: {fileID: 506, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  cameraFade: {fileID: 530, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  finishFadeData:
+    color: {r: 1, g: 1, b: 1, a: 1}
+    fadeInDuration: 0.3
+    onDuration: 1
+    fadeOutDuration: 0.3

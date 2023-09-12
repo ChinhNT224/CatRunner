@@ -1,0 +1,99 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1197374932305522
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4312528525172344}
+  - component: {fileID: 114434802242380893}
+  m_Layer: 30
+  m_Name: 3UIPosScalesAndNGUIAtals
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4312528525172344
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197374932305522}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114434802242380893
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1197374932305522}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ef4f269950998b1b94f3eb0319b5353b, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  characterScreenCharacterModelLocalPos: {x: 0, y: 0, z: -100}
+  characterScreenCharacterModelLocalScl: {x: 40, y: 40, z: 40}
+  characterScreenCharacterModelLocalRot: {x: 10, y: 180, z: 0}
+  helmetScreenCharacterModelLocalPos: {x: 0, y: -15, z: 200}
+  helmetScreenCharacterModelLocalScl: {x: 40, y: 40, z: 40}
+  helmetScreenCharacterModelLocalRot: {x: -15, y: 0, z: 0}
+  celebrationCharacterUnlockCharacterModelLocalPos: {x: 0, y: -100, z: -66}
+  celebrationCharacterUnlockCharacterModelLocalScl: {x: 40, y: 40, z: 40}
+  celebrationCharacterUnlockCharacterModelLocalRot: {x: 0, y: 180, z: 0}
+  celebrationHelmUnlockCharacterModelLocalPos: {x: 0, y: -100, z: 200}
+  celebrationHelmUnlockCharacterModelLocalScl: {x: 40, y: 40, z: 40}
+  celebrationHelmUnlockCharacterModelLocalRot: {x: 0, y: 150, z: 0}
+  celebrationHighScoreCharacterModelLocalPos: {x: 0, y: -100, z: -66}
+  celebrationHighScoreCharacterModelLocalScl: {x: 40, y: 40, z: 40}
+  celebrationHighScoreCharacterModelLocalRot: {x: 0, y: 180, z: 0}
+  gameoverCharacterModelLocalScl: {x: 40, y: 40, z: 40}
+  gameoverCharacterModelLocalRot: {x: 0, y: 180, z: 0}
+  raceGameoverCharacterModelLocalScl: {x: 12, y: 12, z: 12}
+  raceGameoverCharacterModelLocalRot: {x: 0, y: 180, z: 0}
+  tryCharacterModelLocalPos: {x: 0, y: 0, z: -100}
+  tryCharacterModelLocalScl: {x: 40, y: 40, z: 40}
+  tryCharacterModelLocalRot: {x: 0, y: 180, z: 0}
+  coin: coin
+  key: gem
+  fragment: fragment
+  sliverBox: A_baox
+  CM: icon_magnet
+  DC: icon_doubleM
+  DS: icon_doubleC
+  FP: icon_plane
+  scorebooster: icon_upgrades_scorebooster
+  headsprint: icon_upgrades_headstart2000
+  fillSpriteSelected: Character_Btn_Selected
+  fillSpriteGreen: Btn_Orange
+  fillSpriteOrange: Btn_Green
+  attributeUpgradeBuyBtnEnoughSpriteName: Role_ability_Btn
+  attributeUpgradeBuyBtnNormalSpriteName: Role_ability_Btn
+  slotFormat: slot{0}
+  fontColor: {r: 0, g: 0.2901961, b: 0.5019608, a: 1}
+  dayLblActive: {r: 0.6509804, g: 0.82745105, b: 0.98823535, a: 1}
+  rewardLblActive: {r: 0.4901961, g: 0.98823535, b: 0.48235297, a: 1}
+  dayLblInactive: {r: 0.6117647, g: 0.8117648, b: 0.9803922, a: 1}
+  rewardLblInactive: {r: 1, g: 0.8470589, b: 0.003921569, a: 1}
+  footBgFormat: Nsnow_btn_sdxz_0{0}
+  footIconFormat:
+  - Nsnow_icon_hb
+  - Nsnow_icon_sj
+  - Nsnow_icon_coins
+  achievementCellFillSpriteName: Nsnow_btn_gman_0{0}
+  ingameHighScorePointsColor: {r: 1, g: 1, b: 1, a: 1}
+  ingameHighScoreScoreTxtColor: {r: 0.2, g: 0.34509805, b: 0.6117647, a: 1}
+  greyFormat:
+  colorfulFormat:
+  iphoneRate: 1.121

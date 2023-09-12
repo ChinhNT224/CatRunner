@@ -1,0 +1,72 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1248068426810908
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4945673889318899}
+  - component: {fileID: 114801941406715182}
+  m_Layer: 30
+  m_Name: 2ScreenController
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4945673889318899
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248068426810908}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114801941406715182
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1248068426810908}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 0e6ddf62b00df1c8e991d2f0784f495e, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  backgroundAnchor: {fileID: 55, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  screenAnchor: {fileID: 23, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  topBottomAnchor: {fileID: 58, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  popupAnchor: {fileID: 65, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  overlayAnchor: {fileID: 32, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  Camera3D: {fileID: 338, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  Overlay2dAnchor: {fileID: 56, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  Camera2DNormal: {fileID: 339, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  MenuElements3D: {fileID: 91, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  screenGraphicRaycaster: {fileID: 507, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  topBottomGraphicRaycaster: {fileID: 539, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  screenCanvasScaler: {fileID: 508, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  topBottomCanvas: {fileID: 440, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  screenCanvas: {fileID: 436, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  popupCanvas: {fileID: 441, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  overlay2dCanvas: {fileID: 439, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  LoadMenuOnStart: 0
+  FloatingTextFont: {fileID: 12800000, guid: 6665741e4daa80547800883e86f15961, type: 3}
+  stoppingFromEditor: 0
+  doSaveAndDelayRemainingPopups: 0
+  ignoreLastPopupClosed: 0
+  messageHelper: {fileID: 580, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  _topBottomDepth: 0500000005000000010000000500000005000000
+  mainCamera: {fileID: 336, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  uiPrefabNameSuffix:
+  bannerHeight: 0
+  curDeviceType: 0

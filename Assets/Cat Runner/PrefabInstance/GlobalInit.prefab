@@ -1,0 +1,89 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1488886089479056
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4877657840545409}
+  - component: {fileID: 114538474249084262}
+  - component: {fileID: 114381780044039420}
+  - component: {fileID: 114515331333997782}
+  m_Layer: 0
+  m_Name: GlobalInit
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4877657840545409
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488886089479056}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114538474249084262
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488886089479056}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: da47b21c92f0847d1b7be659b961bd9d, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  deleteRaceData: 0
+  debug: 0
+  citySceneName_Debug: City_Roof
+  citySceneNames:
+  - City
+  - Tribe
+  - Circus
+  - Volcano
+  - FutureCity
+  - City_Roof
+  raceSceneName: Race
+  raceCount: 3
+  defaultLanguage: English
+  firstCity: {fileID: 0}
+  race: {fileID: 0}
+  internetReachability: 0
+--- !u!114 &114381780044039420
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488886089479056}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9e3ef5e375b2bd0485186ba05db08a68, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  createDataToSave: 0
+--- !u!114 &114515331333997782
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1488886089479056}
+  m_Enabled: 0
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 74fd2a937fc93a2cf6a3f6d763c8568f, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  updateInterval: 30

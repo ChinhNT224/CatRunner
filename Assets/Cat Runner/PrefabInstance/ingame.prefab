@@ -1,0 +1,57 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1615293815612007
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4692074886405921}
+  - component: {fileID: 114448642269478414}
+  m_Layer: 0
+  m_Name: ingame
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4692074886405921
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615293815612007}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114448642269478414
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1615293815612007}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: bf30c490ec2d9c2cf129ee017df51bda, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  cityBgClip: {fileID: 8300000, guid: df683e842a622d744877932ecfb3ccfb, type: 3}
+  tribeBgClip: {fileID: 8300000, guid: e9f53425a3762cd4ca94d2dc2890d5fb, type: 3}
+  circusBgClip: {fileID: 8300000, guid: c9b9497a56b0d164c8e419c1a14fcdc5, type: 3}
+  futureCityBgClip: {fileID: 8300000, guid: 72d8ab6a0c91c2a48be07dc8fc20753e, type: 3}
+  volcanoCityBgClip: {fileID: 8300000, guid: 99bdc28d482602648a3fe16708f945b5, type: 3}
+  decorateBgClip: {fileID: 8300000, guid: a1d44f3033fb8834abdef9f2bfb3b7f2, type: 3}
+  raceBgClip: {fileID: 8300000, guid: df683e842a622d744877932ecfb3ccfb, type: 3}
+  menuMusicVolume: 0.1
+  ingameMusicVolume: 0.5
+  fadeUpTime: 0.5
+  fadeDownTime: 0.5
+  soundType: 0

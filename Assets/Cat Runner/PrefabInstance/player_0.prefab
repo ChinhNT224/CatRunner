@@ -1,0 +1,68 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &1382461173474029
+GameObject:
+  serializedVersion: 6
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_Component:
+  - component: {fileID: 4977946320222332}
+  - component: {fileID: 114388460939048930}
+  - component: {fileID: 114059205826645021}
+  m_Layer: 0
+  m_Name: player
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4977946320222332
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382461173474029}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_RootOrder: 0
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &114388460939048930
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382461173474029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 506195f089cde56a0e94e0bb2823f509, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  list: {fileID: 540, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  model: {fileID: 0}
+  target: {fileID: 238, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  targetAnim: {fileID: 114059205826645021}
+  audioSource: {fileID: 0}
+  thing: {fileID: 185, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  characterController: {fileID: 401, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+  trans: {fileID: 185, guid: 61b1088a7d5a16944a635d7506b5bb3b, type: 2}
+--- !u!114 &114059205826645021
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1382461173474029}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 40aba5b17848b2fbe2f562ecadf604f2, type: 3}
+  m_Name:
+  m_EditorClassIdentifier:
+  anim: {fileID: 0}
+  follow: {fileID: 0}
