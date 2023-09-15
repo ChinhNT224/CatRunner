@@ -5,15 +5,17 @@ using UnityEngine;
 public class LvManager : MonoBehaviour
 {
     public GameObject[] lvPrefabs;
+    public string playerTag = "Player";
     public float zSpawn=0;
     public float roadLength=18;
     public int numberOfLevel=6;
     public Transform playerTransform;
     public List<GameObject> activeLv = new List<GameObject>();
-    // Start is called before the first frame update
     void Start()
     {
-        for(int i = 0; i < numberOfLevel; i++)
+        GameObject player = GameObject.FindWithTag(playerTag);
+        playerTransform = player.transform;
+        for (int i = 0; i < numberOfLevel; i++)
         {
             if (i == 0)
             {
@@ -27,7 +29,6 @@ public class LvManager : MonoBehaviour
         }
     }
 
-    // Update is called once per frame
     void Update()
     {
         if (playerTransform.position.z -25 > zSpawn - (numberOfLevel * roadLength))

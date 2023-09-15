@@ -1,23 +1,30 @@
-﻿using System.Collections;
-using System.Collections.Generic;
-using UnityEngine;
+﻿using UnityEngine;
 
 public class Magnet : MonoBehaviour
 {
-    public CoinDetector coinDetector;
     public float activationDuration = 10f;
-
-    void Start()
-    {
-        coinDetector = GameObject.FindGameObjectWithTag("Coin Detector").GetComponent<CoinDetector>();
-        coinDetector.Deactivate();
-    }
 
     private void OnTriggerEnter(Collider other)
     {
         if (other.gameObject.tag == "Player")
         {
-            coinDetector.Activate(activationDuration);
+            Transform coinDetectorTransform = other.transform.Find("Coin Detector");
+
+            if (coinDetectorTransform != null)
+            {
+                GameObject coinDetectorObject = coinDetectorTransform.gameObject;
+
+                if (!coinDetectorObject.activeInHierarchy)
+                {
+                    CoinDetector coinDetector = coinDetectorObject.GetComponent<CoinDetector>();
+                    coinDetector.Activate(activationDuration);
+                }
+            }
+            else
+            {
+                Debug.Log("No child with name 'Coin Detector' found.");
+            }
+
             Destroy(gameObject);
         }
     }

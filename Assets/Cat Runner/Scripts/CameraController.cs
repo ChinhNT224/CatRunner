@@ -2,17 +2,23 @@ using UnityEngine;
 
 public class CameraController : MonoBehaviour
 {
-    public Transform target;
+    public string playerTag = "Player";
+    private Transform target;
     private Vector3 offset;
 
     void Start()
     {
+        GameObject player = GameObject.FindWithTag(playerTag);
+        target = player.transform;
         offset = transform.position - target.position;
     }
 
     void LateUpdate()
     {
-        Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, offset.z + target.position.z);
-        transform.position =  newPosition;
+        if (target != null)
+        {
+            Vector3 newPosition = new Vector3(transform.position.x, transform.position.y, offset.z + target.position.z);
+            transform.position = newPosition;
+        }
     }
 }

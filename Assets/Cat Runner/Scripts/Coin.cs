@@ -1,19 +1,29 @@
 ﻿using UnityEngine;
+using System.Collections;
+using System.Collections.Generic;
 
 public class Coin : MonoBehaviour
 {
     public Transform playerTransform;
     public float moveSpeed = 5f;
+    public int coinValue = 1;
 
     CoinMove coinMoveScript;
-    public int coinValue = 1;
     private bool isCollected = false;
     private bool isDoubleActive = false;
 
     public GameObject coinModel;
     public GameObject doubleCoinModel;
 
-    void Start()
+    private static List<Coin> allCoins = new List<Coin>(); 
+    private static bool isGlobalDoubleActive = false; 
+
+    private void Awake()
+    {
+        allCoins.Add(this);
+    }
+
+    private void Start()
     {
         playerTransform = GameObject.FindGameObjectWithTag("Player").transform;
         coinMoveScript = gameObject.GetComponent<CoinMove>();
@@ -23,7 +33,7 @@ public class Coin : MonoBehaviour
     {
         if (!isCollected && other.CompareTag("Player"))
         {
-            Debug.Log($"va chạm2: {other.name}");
+            Debug.Log($"Va chạm2: {other.name}");
             isCollected = true;
             PlayerController playerController = other.GetComponent<PlayerController>();
             if (playerController != null)
@@ -36,24 +46,52 @@ public class Coin : MonoBehaviour
 
         if (!isCollected && other.CompareTag("Coin Detector"))
         {
-            Debug.Log($"va chạm1: {other.name}");
             coinMoveScript.enabled = true;
         }
     }
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.D))
+        if (isDoubleActive)
         {
-            isDoubleActive = true;
-            doubleCoinModel.SetActive(true);
-            coinModel.SetActive(false);
+            ActivateDoubleCoin(10f);
         }
-        else if (Input.GetKeyUp(KeyCode.D))
+    }
+
+    public void OnDoubleCoinCollected(float duration)
+    {
+        isDoubleActive = true;
+        ChangeAllCoinsToDouble(); 
+    }
+
+    private void ChangeAllCoinsToDouble()
+    {
+        foreach (Coin coin in allCoins)
         {
-            isDoubleActive = false;
-            doubleCoinModel.SetActive(false);
-            coinModel.SetActive(true); 
+            if (coin != null && coin.gameObject.activeSelf)
+            {
+                coin.ActivateDoubleCoin(10f); 
+            }
         }
+    }
+
+    public void ActivateDoubleCoin(float duration)
+    {
+        isDoubleActive = true;
+        doubleCoinModel.SetActive(true);
+        coinModel.SetActive(false);
+
+        if (duration > 0f)
+        {
+            StartCoroutine(DeactivateDoubleCoinAfterDuration(duration));
+        }
+    }
+
+    private IEnumerator DeactivateDoubleCoinAfterDuration(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        isDoubleActive = false;
+        doubleCoinModel.SetActive(false);
+        coinModel.SetActive(true);
     }
 }

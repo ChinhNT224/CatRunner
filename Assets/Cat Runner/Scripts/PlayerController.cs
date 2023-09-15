@@ -7,17 +7,20 @@ public class PlayerController : MonoBehaviour
     private Rigidbody rb;
     private CapsuleCollider playerCollider;
     private Animator animator;
-    public float forwardSpeed;
+    public float forwardSpeed = 5f;
     private int desiredLane = 1;
     public float laneDistance = 2f;
-    public float jumpForce;
+    public float jumpForce = 10f;
     public float gravity = -20f;
     private bool isColliding = false;
     private bool isRolling = false;
-    private float rollDuration = 1.0f; 
+    private float rollDuration = 1.0f;
     private float rollTimer = 0.0f;
     private int coinCount = 0;
-
+    private float laneChangeTimer = 0.0f;
+    public float laneChangeDuration = 0.01f;
+    private Vector3 initialPosition;
+    private Vector3 targetPosition;
 
     void Start()
     {
@@ -26,6 +29,8 @@ public class PlayerController : MonoBehaviour
         rb.freezeRotation = true;
         animator = GetComponent<Animator>();
         coinCount = PlayerPrefs.GetInt("CoinCount", 0);
+        initialPosition = transform.position;
+        targetPosition = initialPosition;
     }
 
     void Update()
@@ -35,44 +40,57 @@ public class PlayerController : MonoBehaviour
         if (!isColliding)
         {
             moveDirection.y += gravity * Time.deltaTime;
+            rb.velocity = moveDirection;
         }
-
-        rb.velocity = moveDirection;
 
         if (Physics.Raycast(transform.position, Vector3.down, 1.0f))
         {
-            if (Input.GetKeyDown(KeyCode.UpArrow))
+            if (SwipeManager.swipeUp)
             {
                 animator.SetTrigger("Jump");
-                Jump();               
+                Jump();
             }
         }
 
         if (!isColliding && !isRolling)
         {
-            if (Input.GetKeyDown(KeyCode.RightArrow))
+            if (laneChangeTimer < laneChangeDuration)
             {
-                animator.SetTrigger("RunRight");
-                desiredLane++;
-                if (desiredLane == 3)
-                {
-                    desiredLane = 2;
-                }
+                laneChangeTimer += Time.deltaTime;
+                float t = laneChangeTimer / laneChangeDuration;
+
+                // Ánh xạ tuyến tính từ vị trí ban đầu đến vị trí đích
+                transform.position = Vector3.Lerp(initialPosition, targetPosition, t);
             }
-            if (Input.GetKeyDown(KeyCode.LeftArrow))
+
+            if (SwipeManager.swipeRight)
             {
-                animator.SetTrigger("RunLeft");
-                desiredLane--;
-                if (desiredLane == -1)
+                if (desiredLane < 2 && laneChangeTimer >= laneChangeDuration)
                 {
-                    desiredLane = 0;
+                    animator.SetTrigger("RunRight");
+                    desiredLane++;
+                    laneChangeTimer = 0.0f; // Đặt lại thời gian chuyển làn
+                    initialPosition = transform.position; // Cập nhật vị trí ban đầu
+                    targetPosition = initialPosition + Vector3.right * laneDistance; // Tính toán vị trí đích
                 }
             }
 
-            if (Input.GetKeyDown(KeyCode.DownArrow))
+            if (SwipeManager.swipeLeft)
+            {
+                if (desiredLane > 0 && laneChangeTimer >= laneChangeDuration)
+                {
+                    animator.SetTrigger("RunLeft");
+                    desiredLane--;
+                    laneChangeTimer = 0.0f; // Đặt lại thời gian chuyển làn
+                    initialPosition = transform.position; // Cập nhật vị trí ban đầu
+                    targetPosition = initialPosition - Vector3.right * laneDistance; // Tính toán vị trí đích
+                }
+            }
+
+            if (SwipeManager.swipeDown)
             {
                 animator.SetTrigger("Roll");
-                StartRoll();         
+                StartRoll();
             }
         }
 
@@ -85,19 +103,6 @@ public class PlayerController : MonoBehaviour
                 StopRoll();
             }
         }
-
-        Vector3 targetPosition = transform.position.z * transform.forward + transform.position.y * transform.up;
-
-        if (desiredLane == 0)
-        {
-            targetPosition += Vector3.left * laneDistance;
-        }
-        else if (desiredLane == 2)
-        {
-            targetPosition += Vector3.right * laneDistance;
-        }
-
-        transform.position = targetPosition;
     }
 
     private void Jump()
@@ -111,8 +116,8 @@ public class PlayerController : MonoBehaviour
     private void StartRoll()
     {
         isRolling = true;
-        playerCollider.height = 5f; 
-        playerCollider.center = new Vector3(0f, playerCollider.height / 2f, 0f); 
+        playerCollider.height = 5f;
+        playerCollider.center = new Vector3(0f, playerCollider.height / 2f, 0f);
         rollTimer = 0.0f;
     }
 
@@ -121,7 +126,7 @@ public class PlayerController : MonoBehaviour
         if (isRolling)
         {
             isRolling = false;
-            playerCollider.height = 11.0f; 
+            playerCollider.height = 11.0f;
             playerCollider.center = new Vector3(0f, 4.849356f, -0.308789f);
         }
     }
@@ -133,16 +138,13 @@ public class PlayerController : MonoBehaviour
         {
             isColliding = true;
             PlayerManager.gameOver = true;
-            Debug.LogError("va chạm");
         }
     }
 
     public void IncreaseCoins(int amount)
     {
         coinCount += amount;
-        PlayerPrefs.SetInt("CoinCount", coinCount); 
-        PlayerPrefs.Save(); 
+        PlayerPrefs.SetInt("CoinCount", coinCount);
+        PlayerPrefs.Save();
     }
-
-
 }
